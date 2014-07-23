@@ -1,0 +1,270 @@
+body {
+	font-family: 'Abel', sans-serif;
+}
+
+section.welcome {
+	background: url('../img/ben-profile-sepia.jpg') no-repeat;
+	background-size: cover;
+	height: 100%;
+	background-attachment: fixed;
+}
+
+.striped {
+	background-image: url('../img/stripe-overlay.png');
+	background-repeat: repeat-x repeat-y;
+}
+
+.row {
+	margin: 0px;
+	width: 100%;
+}
+
+.divider {
+	height: 2px;
+	width: 250px;
+	border-bottom: solid 1px orange;
+	margin: 10px auto;
+}
+
+section.intro {
+	text-align: center;
+	z-index: 1;
+	padding: 15px;
+	position: fixed;
+}
+
+section.intro-lar {
+	font-size: 30px;
+	color: black;
+	top: 30%;
+	right: 15%;
+}
+
+section.intro-sm-med {
+	font-size: 19px;
+	color: white;
+	top: 72%;
+	width: 100%;
+}
+
+section.intro div {
+	padding: 3px;
+}
+
+.over-intro {
+	position: relative;
+	z-index: 2;
+}
+
+section.about {
+	background-color: orange;
+	position: relative;
+	text-align: center;
+}
+
+.about-site {
+	float: left;
+	width: 40%;
+	background-color: white;
+	padding: 15px;
+}
+
+.about-me {
+	float: left;
+	width: 60%;
+	min-height: 325px;
+	color: black;
+	padding: 15px;
+	font-size: 20px;
+}
+
+div.about-me div.row {
+	margin-top: 15px;
+}
+
+section.projects {
+	z-index: 3;
+	background-color: orange;
+	text-align: center;
+	clear: both;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+h3.projects {
+	font-weight: bold;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+ul.project-list {
+	margin: auto;
+	margin-top: 10px;
+}
+
+li.project {
+	color: white;
+	padding: 20px;
+}
+
+li.project img {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+section.outro {
+	z-index: 3;
+	height: 65%;
+	background: url('../img/oahu.jpg') no-repeat;
+	background-size: cover;
+}
+
+div.outro-text {
+	text-align: center;
+	color: black;
+	/* Center */
+	margin: auto;
+	left: 0;
+	right: 0;
+	padding-top: 10px;
+}
+
+div.outro-text h3 {
+	font-size: 30px;
+	color: black;
+}
+
+ul.endeavors {
+	list-style: none;
+	width: 30%;
+	margin: auto;
+	margin-top: 15px;
+}
+
+ul.more {
+	list-style: none;
+	width: 15%;
+	margin: auto;
+	color: black;
+}
+
+ul.more li {
+	margin: 10px 0;
+}
+
+ul.endeavors li:hover {
+	border-bottom: solid 1px orange;
+	color: orange;
+}
+
+ul.more li:hover {
+	border-bottom: solid 1px orange;
+}
+
+h1,h2,h3,h4,h5,h6, ul {
+	font-family: 'Abel', sans-serif;	
+	margin: 0;
+}
+
+h3.black {
+	color: black;
+}
+
+h3.white {
+	color: white;
+}
+
+div.goal, div.current-work {
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.green {
+	color: green;
+}
+
+.white-border {
+	border-color: white;
+}
+
+i.about-icon {
+	font-size: 110px;
+	margin: 7px;
+}
+
+i.small {
+	font-size: 15px;
+}
+
+div.project-label {
+	text-align: center;
+	position: relative;
+	top: 92%;
+}
+
+.orange {
+	color: orange;
+}
+
+ul.social-media {
+	margin-top: 15px;
+}
+
+ul.social-media a {
+	color: black;
+}
+
+ul.social-media li {
+	display: inline;
+	font-size: 35px;
+	list-style-type: none;
+	border: 1px solid black;
+	border-radius: 7px;
+	padding: 2px 22px;
+	margin-right: 4px;
+	margin-left: 4px;
+	-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+ul.social-media li:hover {
+	background-color: orange;
+	color: white;
+	border-color: orange;
+}
+
+i.fliph {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.thanks {
+	position: absolute;
+	color: white;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+
+.outro-text a {
+	color: orange;
+}
+
+div.bio {
+	color: black;
+	margin: auto;
+	margin-bottom: 30px;
+	width: 40%;
+}

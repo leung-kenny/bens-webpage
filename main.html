@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ben Alpers | Design</title>
+
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <script src="js/vendor/jquery.js"></script>
+  	<script src="js/foundation/foundation.js"></script>
+  	<script src="js/foundation/foundation.magellan.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+
+    <!-- External Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/general_foundicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  </head>
+
+	<body>
+    <section class="welcome">
+
+      <div class="project-label" id="animate-label">View Projects<br/><i class="small fa fa-sort-down about-icon"></i></div>
+
+      <section class="intro intro-lar show-for-large-only" id="intro">
+        <div>Hi, my name is Ben Alpers.</div>
+        <div>Designer and Biomechanical Engineer</div>
+        <div class="divider"></div>
+        <div class="location"><i class="foundicon-location"></i> Palo Alto, CA</div>
+      </section>
+
+      <section class="intro intro-sm-med hide-for-large-only" id="intro">
+        <div>Hi, my name is Ben Alpers.</div>
+        <div>Designer and Biomechanical Engineer</div>
+        <div class="divider"></div>
+        <div><i class="foundicon-location"></i> Palo Alto, CA</div>
+      </section>
+
+    </section>
+
+    <section class="about over-intro">
+
+      <div class="about-site">
+        <h3 class="black">Thank you for visiting my site!</h3>
+        <div><br/>Here you will find some of my creative endeavors, including:
+          <ul class="endeavors">
+            <li>group projects</li>
+            <li>UI/UX designs</li>
+            <li>T-shirt designs</li>
+            <li>Arts &amp; crafts</li>
+            <li>and more!</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <ul class="social-media">
+            <a href="#"><li><i class="fa fa-envelope"></i></li></a>
+            <a href="#"><li><i class="fa fa-facebook-square"></i></li></a>
+            <a href="#"><li><i class="fa fa-twitter-square"></i></li></a>
+            <a href="#"><li><i class="fa fa-instagram"></i></li></a>
+            <a href="#"><li><i class="fa fa-music"></i></li></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about-me striped">
+        <h3 class="white">I enjoy applying creative design to <span class="orange">projects that matter.</span></h3>
+
+        <div class="row">
+          <div class="goal large-5 medium-5 small-5 columns"><br/>That's why I want to work in <br/><span class="medical-devices orange">Medical Devices</span> and <span class="digital-health orange">Digital Health.</span><br/>
+          <br/><i class="fa fa-stethoscope about-icon fliph"></i><i class="fa fa-laptop about-icon"></i>
+          </div>
+          <div class="current-work large-6 medium-6 small-6 columns">
+            <i class="fa fa-book about-icon"></i><br/>
+            I am majoring in <span class="bio green">Bio</span><span class="mech-eng">mechanical Engineering</span> at Stanford University. I stay busy with collaborative and personal design projects.<br/><br/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects over-intro">
+      <h3 class="projects">Recent Projects</h3>
+      <div class="divider white-border"></div>
+
+      <ul class="project-list large-block-grid-5">
+        <li class="project two columns"><img src="img/bio-research.png" alt="Bioengineering Research"/>Design For America</li>
+        <li class="project two columns"><img src="img/bio-research.png" alt="Bioengineering Research"/>Medical Device Innovation</li>
+        <li class="project two columns"><img src="img/bio-research.png" alt="Bioengineering Research"/>BioEngineering Research</li>
+        <li class="project two columns"><img src="img/bio-research.png" alt="Bioengineering Research"/>Graphic Design</li>
+        <li class="project two columns"><img src="img/bio-research.png" alt="Bioengineering Research"/>Memorial Design</li>
+      </ul>
+
+    </section>
+
+    <section class="outro over-intro" data-type="background" data-speed="7">
+      <div class="outro-text">
+        <h3>About</h3>
+        <div class="divider"></div>
+        <div class="bio">
+          I am an undergrad at Stanford majoring in BioMechanical Engineering. My major essentially allows me to have grounding coursework in mechanical engineering, while being able to also take biology and medical device classes.
+          <br/><br/>
+          I strongly believe in creativity as a gateway for technological innovation, and I have found that belief to be true no matter where my curiosity has taken me - in labs, design groups, course projects, and beyond.
+        </div>
+        <br/>
+        Check out these other awesome sites:
+        <ul class="more">
+          <li><a href="http://www.mixedco.com">Stanford Mixed Company</a></li>
+          <li><a href="http://www.balpers.foliohd.com">FolioHd Website</a></li>
+        </ul>
+        <div class="thanks">
+          Copyright Ben Alpers 2014.<br/>Website designed by Kenny Leung.<br/>Inspired by <a href="http://casperodendaal.co.za/">Casper Odendaal</a> and footer image courtesy of <a href="http://booneebel.blogspot.com/">Boone.</a>
+        </div>
+      </div>
+    </section>
+	</body>
+
+  <script>
+    $('#animate-label').addClass('animated fadeInDown');
+    $('#intro').addClass('animated fadeInDown');
+    // Parallax feature
+    $(document).ready(function() {
+      var $window = $(window);
+      // Iterate over all background objects
+      $('section[data-type="background"]').each(function(){
+        var $bgobj = $(this); // assigning the object        
+        $(window).scroll(function() {
+          var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+          // Put together our final background position
+          var coords = '50% '+ yPos + 'px';           
+          // Move the background
+          $bgobj.css({ backgroundPosition: coords });
+        });
+      }); 
+    });
+  </script>
+
+ </html>
