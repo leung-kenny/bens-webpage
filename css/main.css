@@ -114,18 +114,16 @@ li.project img {
 
 section.outro {
 	z-index: 3;
-	height: 65%;
 	background: url('../img/oahu.jpg') no-repeat;
 	background-size: cover;
+	background-position: fixed;
+	height: 100%;
 }
 
 div.outro-text {
 	text-align: center;
 	color: black;
 	/* Center */
-	margin: auto;
-	left: 0;
-	right: 0;
 	padding-top: 10px;
 }
 
@@ -252,9 +250,10 @@ i.fliph {
 	color: white;
 	left: 0;
 	right: 0;
-	bottom: 0;	
 	text-align: center;
 	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-top: 10px;
 	font-size: 13px;
 }
 
